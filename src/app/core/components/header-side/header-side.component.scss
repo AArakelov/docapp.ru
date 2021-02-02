@@ -1,0 +1,30 @@
+@import "src/assets/scss/mixins/mixins";
+
+.sidenav-wrapper {
+  width: 80px;
+  align-items: center;
+  background: #FFFFFF;
+  display: inline-block;
+  text-align: center;
+  height: 100vw;
+  margin-right: 16px;
+}
+
+.sidenav-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav__item {
+  margin-top: 43.5px;
+}
+
+.sidenav__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidenav__title {
+  @include fs-small-10
+}

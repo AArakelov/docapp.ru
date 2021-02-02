@@ -1,0 +1,50 @@
+@import "../../../../assets/scss/variables";
+
+.header-top-wrapper {
+  background: $main-color;
+  height: 64px;
+  width: 100%;
+  padding: 0 20px 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+.header__link-img {
+  max-width: 32px;
+  max-height: 31px;
+}
+
+.header-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__logo-link{
+  margin-right: 40px;
+}
+.nav-list{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+.nav__item+ .nav__item{
+  margin-left: 37px;
+}
+.icon-img{
+  width: 28px;
+  height: 28px;
+}
+.icon-img +.icon-img{
+  margin-left: 27px;
+  margin-right: 27px;
+}
+.nav__profile-photo{
+  width: 32px;
+  height: 32px;
+}
+.nav-right{
+
+  display:flex;
+  justify-content: space-between;
+}

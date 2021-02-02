@@ -1,0 +1,39 @@
+@mixin fs-base{
+  font: {
+    family: Rubik;
+    size: 16px;
+    weight: normal;
+  };
+  line-height: 19px;
+  color: #504F5A;
+}
+
+@mixin fs-medium{
+  font: {
+    family: Rubik;
+    size: 14px;
+    weight: normal;
+  };
+  line-height: 17px;
+  color: #504F5A;
+}
+@mixin fs-small-12{
+  font: {
+    family: Rubik;
+    size: 12px;
+    weight: normal;
+  };
+  line-height: 14px;
+  color: #A4A3AA;
+}
+@mixin fs-small-10{
+  font: {
+    family: Rubik;
+    size: 10px;
+    weight: 500;
+  };
+  line-height: 12px;
+  color: #A4A3AA;
+}
+
+
