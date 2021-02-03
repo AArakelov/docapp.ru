@@ -1,0 +1,10 @@
+.desktop-grid{
+  display: grid;
+  grid-template-columns: 41% 28% auto;
+  gap: 20px;
+}
+@media screen and (max-width: 1300px){
+  .desktop-grid{
+    grid-template-columns: 100%;
+  }
+}

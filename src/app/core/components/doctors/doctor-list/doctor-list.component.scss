@@ -1,0 +1,62 @@
+@import "src/assets/scss/mixins/mixins";
+@import "src/assets/scss/variables";
+
+.doctor-list-wrapper {
+  @include box-shadow-card;
+  height: 273px;
+  padding: 20px;
+}
+.doctor-list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.doctor__header {
+  @include fs-base;
+}
+.doctor__show-all {
+  @include fs-small-12;
+}
+.doctor__link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.doctor__photo {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+}
+.doctor__link + .doctor__link {
+  margin-top: 30px;
+}
+.doctor__name {
+  @include fs-medium;
+  margin-bottom: 7px;
+}
+.doctor__qualification {
+  @include fs-small-12
+}
+.doctor__link::after {
+  content: '';
+  position: absolute;
+  width: 74%;
+  margin: 0 auto;
+  max-width: 271px;
+  left: 60px;
+  bottom: -16px;
+  border: 1px solid #E7E6E9;
+}
+@media screen and (max-width: 1300px) {
+  .doctor-list-wrapper {
+    min-width: 320px;
+    max-width: inherit;
+  }
+}

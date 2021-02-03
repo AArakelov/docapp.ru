@@ -40,7 +40,6 @@ $container-sizes: (
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
-  max-width: 1320px;
   width: 100%;
 
   &:not(.is-fluid) {

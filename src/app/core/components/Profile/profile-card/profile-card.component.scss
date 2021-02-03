@@ -1,0 +1,110 @@
+@import "src/assets/scss/mixins/mixins";
+@import "src/assets/scss/variables";
+
+.profile-card-wrapper {
+  height: 273px;
+  padding: 20px;
+  display: flex;
+
+  @include box-shadow-card
+}
+
+.profile-view {
+  background: #F8F8F9;
+  border-radius: 10px;
+  width: 49%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px 20px 20px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.profile__photo {
+  border-radius: 50%;
+  width: 73px;
+  height: 72px;
+  margin-bottom: 19px;
+}
+
+.profile__last-name {
+  @include fs-small-12;
+  margin-bottom: 4px;
+}
+
+.profile__first-name {
+  @include fs-medium;
+  margin-bottom: 19px;
+}
+
+.profile__link {
+  min-width: 205px;
+  height: 38px;
+  background: $da-red;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: Rubik;
+  white-space: nowrap;
+
+
+  color: #FFFFFF;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__title {
+  @include fs-base;
+  margin-bottom: 20px;
+}
+
+.profile-item {
+  .item__title {
+    @include fs-small-12;
+    margin-bottom: 8px;
+  }
+
+  .item__subtitle {
+    @include fs-medium;
+  }
+}
+
+.profile-item + .profile-item {
+  margin-top: 27px;
+}
+
+
+.setting{
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 8px;
+  .setting__icon{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 1300px){
+  .profile-card-wrapper{
+    min-width: 320px;
+    max-width: inherit;
+  }
+}
